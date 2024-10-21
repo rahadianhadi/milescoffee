@@ -597,3 +597,39 @@ a.btn-link.text-light:after {
 	}
 }
 /* ============ mobile view .end// ============ */
+
+/* CUSTOM */
+.fs-4 {
+  padding-bottom: 200px;
+}
+
+@media (max-width: 768px) {
+  .fs-4 {
+    padding-bottom: 50px;
+  }
+}
+
+
+/* GALLERY */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: auto;
+  grid-auto-flow: dense;
+  gap: 6px;
+}
+
+.gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+img.four-grid-cells {
+  grid-row: span 2 / auto;
+  grid-column: span 2 / auto;
+}
+
+img.wide-image {
+  grid-column: span 2 / auto;
+}
