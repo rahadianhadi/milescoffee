@@ -633,3 +633,24 @@ img.four-grid-cells {
 img.wide-image {
   grid-column: span 2 / auto;
 }
+
+.rounded-image {
+  border-radius: 18px; /* Adjust the value for more or less rounding */
+}
+
+.iframe-wrapper {
+  position: relative;
+  width: 100%;
+  padding-bottom: 51.25%; /* 16:9 aspect ratio (height/width * 100) */
+  height: 0;
+  overflow: hidden;
+}
+
+.iframe-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
